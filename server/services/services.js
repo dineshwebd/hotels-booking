@@ -3,5 +3,5 @@ exports.indexfile = (request, response) => {
 };
 
 exports.thankyoufile = (request, response) => {
-    response.render('thankyou');
+    response.render("thankyou");
 };

@@ -15,7 +15,7 @@ exports.matching = (request, response) => {
 
     checking.save()
         .then(() => {
-            response.redirect('/tq');
+            response.redirect("/tq");
         })
         .catch(err => {
             console.error('Error saving reservation:', err);
