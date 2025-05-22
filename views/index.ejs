@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Booking</title>
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="../views/img/original-a71e7b076c43da16272fc3f07671171b.webp">
+</head>
+<body>
+    <header>
+        <div class="logo">RETRO </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <button class="get-started-btn">Get Started</button>
+    </header>
+
+
+    <!-- hero -->
+         <section class="hero">
+        <div class="hero-content">
+            <h1>The Finest Food</h1>
+            <button>Reserve</button>
+        </div>
+    </section>
+
+
+
+     <section class="booking-promo-section">
+        <div class="promo-text">
+            <h2>Indulge in a Seamless Dining Experience.</h2>
+            <p>Reserve your table at Riston Restaurant effortlessly and savor a luxurious meal crafted with the finest ingredients.</p>
+            <div class="promo-buttons">
+                <button class="book-now">Book Now</button>
+                <button class="learn-more">Learn More</button>
+            </div>
+        </div>
+        <div class="promo-image">
+            <img src="https://i.pinimg.com/736x/0b/99/18/0b9918cad06c24af7d1b2b7ee8987d84.jpg" alt="Gourmet Dish">
+        </div>
+    </section>
+
+       <section class="dining-options-section">
+        <h2>A Memorable Meal Starts with Riston Dining.</h2>
+        <div class="dining-options">
+            <div class="dining-option">
+                <h3>Signature Dinner</h3>
+                <div class="price">From $45</div>
+                <button>Reserve Now</button>
+            </div>
+            <div class="dining-option">
+                <h3>Weekend Brunch</h3>
+                <div class="price">From $25</div>
+                <button>Reserve Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contents -->
+   <section class="how-it-works-section">
+        <h2>See How It Works</h2>
+        <p>Booking a table at Dxsn Restaurant is quick and easy. Follow these simple steps to reserve your spot!</p>
+
+        <div class="steps">
+            <div class="step date">
+                <h3>Select Date & Time</h3>
+                <p>Choose your preferred date and time for dining.</p>
+            </div>
+            <div class="step table">
+                <h3>Choose Your Table</h3>
+                <p>Select a table that suits your party size and preference.</p>
+            </div>
+            <div class="step confirm">
+                <h3>Confirm Reservation</h3>
+                <p>Confirm your booking and get ready to enjoy!</p>
+            </div>
+        </div>
+    </section>
+
+      <section class="reservation-form-section">
+        <form class="reservation-form" action="/postingdata" method="post">
+            <div class="form-group">
+                <label for="table-type">Table Type</label>
+                <select id="table-type" name="tabletype">
+                    <option value="">Select Table Type</option>
+                    <option value="indoor">Indoor</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="private">Private Room</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="tableguest" placeholder="No. of Guests" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" value="2025-05-15" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" value="18:00" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="myemail" placeholder="Your Email" required>
+            </div>
+            <button type="submit" class="check-availability-btn">Check Availability</button>
+        </form>
+    </section>
+
+    <div class="footer-bottom">
+    <p>&copy; 2025 Retro Dining. All rights reserved.</p>
+  </div>
+</body>
+</html>
